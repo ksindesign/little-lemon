@@ -1,0 +1,29 @@
+/* Main Section*/
+
+main .heading {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .heading .btn {
+  min-width: 200px;
+  max-height: 6rem;
+}
+
+main .heading h2 {
+  font-size: 6.4rem;
+}
+
+main #testimonials {
+  background: var(--primary-color-one);
+  width: 100vw;
+  min-height: 40vh;
+}
+
+section {
+  padding: 3rem auto;
+  margin: 5rem auto;
+  width: 100vw;
+}

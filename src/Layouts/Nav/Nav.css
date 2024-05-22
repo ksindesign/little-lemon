@@ -1,0 +1,18 @@
+/* Nav Section */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 10vh;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: var(--secondary-color-black);
+}

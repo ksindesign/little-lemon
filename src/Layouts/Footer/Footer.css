@@ -1,0 +1,11 @@
+/* Footer */
+footer {
+  background-color: var(--primary-color-one);
+  color: var(--secondary-color-white);
+  width: 100vw;
+  bottom: 0;
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

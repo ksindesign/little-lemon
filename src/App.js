@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Nav from './Layouts/Nav/Nav';
+import Header from './Layouts/Header/Header';
+import Main from './Layouts/Main/Main';
+import Footer from './Layouts/Footer/Footer';
+
+const brand = {
+  name: 'Little Lemon',
+  content:
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, cum eaque. Sed, obcaecati velit. Aperiam vitae voluptatem necessitatibus commodi nobis, harum fugit incidunt ratione! Beatae non recusandae in similique amet.',
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav></Nav>
+      <Header brand={brand} name={brand.name}></Header>
+      <Main></Main>
+      <Footer brand={brand} name={brand.name}></Footer>
+    </>
   );
 }
 
