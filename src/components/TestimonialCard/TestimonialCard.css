@@ -1,0 +1,31 @@
+/* Testimonial Card */
+section.wrapper {
+  margin: 10rem auto;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.testimonial-card {
+  padding: 2rem 1rem;
+  max-width: 200px;
+  border-radius: 4px;
+  line-height: 1.5;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+}
+
+.testimonial-card h4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import './FoodCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import deliverIcon from '../../assets/delivery.svg';
 
 const cardStyle = {
   backgroundColor: '#ccc',
@@ -28,7 +29,8 @@ function FoodCard({ title, price, imageUrl, content, cardBtn }) {
       <a href='#' className='btnIcon'>
         <strong>{cardBtn}</strong>
         <span>
-          <FontAwesomeIcon icon={faCartShopping} />
+          {/* <FontAwesomeIcon icon={faCartShopping} /> */}
+          <img src={deliverIcon} alt='delivery-icon' className='deliveryIcon' />
         </span>{' '}
       </a>
     </div>

@@ -5,7 +5,25 @@ footer {
   width: 100vw;
   bottom: 0;
   min-height: 5vh;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 2rem 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.footer-menu {
+  width: 70%;
+}
+
+footer p {
+  text-align: center;
+  padding: 1rem 0;
 }

@@ -15,6 +15,12 @@ main.wrapper {
   width: 100%;
   border-radius: 8px;
   justify-content: space-between;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card .card-upper .card-title {
@@ -40,4 +46,8 @@ main.wrapper {
   color: var(--secondary-color-black);
   margin-left: 1rem;
   margin-bottom: 3rem;
+}
+
+.card .btnIcon:hover {
+  cursor: pointer;
 }
