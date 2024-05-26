@@ -1,6 +1,6 @@
 import {
   faFacebook,
-  faTwitter,
+  faXTwitter,
   faInstagram,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
@@ -18,12 +18,12 @@ import pages from '../utils/pages';
 const contacts = [
   { icon: faLocationDot, info: '678 Pisa Ave, Chicago, IL 60611' },
   { icon: faPhone, info: '(312) 593-2744' },
-  { icon: faEnvelope, info: 'customer@littlelemon.com' },
+  { icon: faEnvelope, info: 'info@littlelemon.com' },
 ];
 
 const socials = [
   { icon: faFacebook, name: 'facebook' },
-  { icon: faTwitter, name: 'twitter' },
+  { icon: faXTwitter, name: 'twitter' },
   { icon: faInstagram, name: 'instagram' },
   { icon: faYoutube, name: 'youtube' },
 ];
@@ -60,7 +60,7 @@ const Footer = () => {
           </address>
         </div>
         <div className='site-footer-social'>
-          <h4>Connect with us</h4>
+          <h4>Follow us</h4>
           {socials.map((social, index) => (
             <a
               key={index}
