@@ -1,8 +1,3 @@
-import React from 'react';
-import './Footer.css';
-import { Link } from 'react-router-dom';
-import footerLogo from './assets/logo-white.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebook,
   faTwitter,
@@ -14,12 +9,11 @@ import {
   faLocationDot,
   faPhone,
 } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
+import './Footer.css';
+import logoWhiteImage from './assets/logo-white.png';
 import pages from '../utils/pages';
-
-const time = new Date();
-const year = time.getFullYear();
-
-const navLinks = Array.from(pages.values()).filter((page) => page.anchorable);
 
 const contacts = [
   { icon: faLocationDot, info: '678 Pisa Ave, Chicago, IL 60611' },
@@ -34,15 +28,19 @@ const socials = [
   { icon: faYoutube, name: 'youtube' },
 ];
 
-function Footer({ brand }) {
+const navLinks = Array.from(pages.values()).filter((page) => page.anchorable);
+
+const Footer = () => {
   return (
-    <footer>
-      <div className='wrapper footer-container site-footer'>
-        <div className='footer-logo'>
-          <img src={footerLogo} alt='little-lemon' />
-        </div>
-        <div className='footer-menu'>
-          <h4>Site Map</h4>
+    <footer className='site-footer'>
+      <div className='container grid'>
+        <img
+          className='site-footer-logo'
+          src={logoWhiteImage}
+          alt='Little Lemon'
+        />
+        <nav className='site-footer-nav'>
+          <h4>Sitemap</h4>
           <ul>
             {navLinks.map((navLink, index) => (
               <li key={index}>
@@ -50,6 +48,8 @@ function Footer({ brand }) {
               </li>
             ))}
           </ul>
+        </nav>
+        <div className='site-footer-contact'>
           <h4>Contact us</h4>
           <address>
             {contacts.map((contact, index) => (
@@ -58,24 +58,23 @@ function Footer({ brand }) {
               </p>
             ))}
           </address>
-          <div className='site-footer-social'>
-            <h4>Connect with us</h4>
-            {socials.map((social, index) => (
-              <a
-                key={index}
-                href={`https://www.${social.name}.com`}
-                target='_blank'
-                rel='noreferrer'
-              >
-                <FontAwesomeIcon icon={social.icon} size='lg' />
-              </a>
-            ))}
-          </div>
+        </div>
+        <div className='site-footer-social'>
+          <h4>Connect with us</h4>
+          {socials.map((social, index) => (
+            <a
+              key={index}
+              href={`https://www.${social.name}.com`}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FontAwesomeIcon icon={social.icon} size='lg' />
+            </a>
+          ))}
         </div>
       </div>
-      <p>© All rights reserved Little Lemon {year}</p>
     </footer>
   );
-}
+};
 
 export default Footer;

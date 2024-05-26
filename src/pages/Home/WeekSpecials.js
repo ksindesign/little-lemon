@@ -5,6 +5,7 @@ import lemonDessertImage from './assets/lemon-dessert.jpg';
 import './WeekSpecials.css';
 import pages from '../../utils/pages';
 import MealCard from './MealCard';
+import FoodCard from '../../components/FoodCard/FoodCard';
 
 const meals = [
   {
@@ -41,7 +42,8 @@ const WeekSpecials = () => {
         </Link>
       </div>
       {meals.map((meal, index) => (
-        <MealCard key={index} meal={meal} />
+        // <MealCard key={index} meal={meal} />
+        <FoodCard key={index} meal={meal} />
       ))}
     </section>
   );

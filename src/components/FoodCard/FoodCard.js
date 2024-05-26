@@ -1,38 +1,35 @@
 import React from 'react';
 import './FoodCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import deliverIcon from '../../assets/delivery.svg';
+import { Link } from 'react-router-dom';
+import { faMotorcycle } from '@fortawesome/free-solid-svg-icons';
+import pages from '../../utils/pages';
 
 const cardStyle = {
-  backgroundColor: '#ccc',
-  maxWidth: '30%',
+  backgroundColor: '#fff',
   minHeight: '400px',
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
   gap: '1rem',
+  padding: '1rem',
 };
 
-function FoodCard({ title, price, imageUrl, content, cardBtn }) {
+function FoodCard({ meal }) {
   return (
     <div className='card' style={cardStyle}>
       <div className='card-upper'>
-        <img src={imageUrl} alt={title} />
+        <img src={meal.image} alt={meal.name} />
         <div className='card-text'>
           <p className='card-title'>
-            <strong>{title}</strong> <span>$ {price}</span>
+            <strong>{meal.name}</strong> <span>{meal.price}</span>
           </p>
-          <p className='card-content'>{content}</p>
+          <p className='card-content'>{meal.description}</p>
         </div>
       </div>
-      <a href='#' className='btnIcon'>
-        <strong>{cardBtn}</strong>
-        <span>
-          {/* <FontAwesomeIcon icon={faCartShopping} /> */}
-          <img src={deliverIcon} alt='delivery-icon' className='deliveryIcon' />
-        </span>{' '}
-      </a>
+      <Link to={pages.get('orderOnline').path} className='delivery'>
+        Order a delivery <FontAwesomeIcon icon={faMotorcycle} />
+      </Link>
     </div>
   );
 }

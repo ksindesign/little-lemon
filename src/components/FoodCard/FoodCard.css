@@ -51,3 +51,12 @@ main.wrapper {
 .card .btnIcon:hover {
   cursor: pointer;
 }
+
+.delivery {
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.delivery:hover {
+  color: var(--primary-color-two);
+}
