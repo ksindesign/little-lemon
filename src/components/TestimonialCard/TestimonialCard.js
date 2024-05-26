@@ -6,9 +6,11 @@ const testCardStyle = {
   display: 'flex',
   flexDirection: 'column',
   overflow: 'hidden',
+  alignItems: 'center',
+  textAlign: 'center',
 };
 
-function TestimonialCard({ name, title, content, score, star, avatarSrc }) {
+function TestimonialCard({ name, title, content, star, avatarSrc }) {
   return (
     <div className='testimonial-card' style={testCardStyle}>
       <div className='card-upper'>

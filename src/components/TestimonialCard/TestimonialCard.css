@@ -17,15 +17,14 @@ section.wrapper {
   line-height: 1.5;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
 }
-
-.testimonial-card h4 {
-  display: flex;
-  justify-content: space-between;
-}
-
 .avatar {
   width: 100%;
-  width: 150px;
-  height: 150px;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  background-color: #000;
+  min-height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  margin: 1rem 0;
 }
