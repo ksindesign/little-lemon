@@ -18,12 +18,12 @@
   grid-column: 2;
   display: none;
   cursor: pointer;
-  color: #495e57;
+  color: var(--primary-color-one);
   transition: background-color 0.5s;
 }
 
 .nav-bar-hamburger:hover {
-  background-color: #f4ce14;
+  background-color: var(--primary-color-two);
 }
 
 .nav-bar-links {
@@ -59,7 +59,8 @@
 .current-location,
 .nav-bar-links a:hover,
 .nav-bar-links a:focus {
-  background-color: #f4ce14;
+  color: var(--primary-color-two);
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 992px) {
