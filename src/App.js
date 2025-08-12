@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Bookings from './pages/Bookings';
 import ConfirmedBooking from './pages/Bookings/ConfirmedBooking';
 import NotFound from './pages/NotFound';
+import Menu from './pages/Menu';
 import UnderConstruction from './pages/UnderConstruction';
 
 const App = () => {
@@ -17,10 +18,7 @@ const App = () => {
             path={pages.get('about').path}
             element={<UnderConstruction />}
           />
-          <Route
-            path={pages.get('menu').path}
-            element={<UnderConstruction />}
-          />
+          <Route path={pages.get('menu').path} element={<Menu />} />
           <Route path={pages.get('bookings').path} element={<Bookings />} />
           <Route
             path={pages.get('confirmedBooking').path}
