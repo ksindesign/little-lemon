@@ -119,3 +119,14 @@ main > section {
   border-color: var(--primary-color-one);
   color: #ffffff;
 }
+
+@media screen and (max-width: 692px) {
+  .button-primary {
+    width: 100%;
+    display: inline-flex;
+    max-width: 150px;
+    max-height: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+}
