@@ -1,7 +1,7 @@
 .bookings h2 {
   padding: 1.875rem 0 1.875rem 0;
-  background-color: #495E57;
-  color: #FFFFFF;
+  background-color: #495e57;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -23,9 +23,9 @@
 
 .bookings button:disabled,
 .bookings button[disabled] {
-  background-color: #EDEFEE;
-  border-color: #EDEFEE;
-  color: #ADAFAE;
+  background-color: #edefee;
+  border-color: #edefee;
+  color: #adafae;
   cursor: not-allowed;
 }
 
@@ -36,4 +36,10 @@
   min-height: 31.25rem;
   padding: 1.875rem 0 1.875rem 0;
   text-align: center;
+}
+
+.bookings button[type='submit'] {
+  display: inline-flex;
+  width: 100%;
+  max-width: unset;
 }
