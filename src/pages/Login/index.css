@@ -1,0 +1,30 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 31.25rem;
+  padding: 1.875rem 0 1.875rem 0;
+}
+
+p {
+  label {
+    margin-right: 1rem;
+  }
+}
+
+button[type='submit'] {
+  display: inline-block;
+  padding-block: 0.5rem;
+  background-color: var(--primary-color-two);
+  outline: none;
+}
+
+button[type='submit']:focus {
+  outline: none;
+}
+
+@media (any-hover: hover) {
+  button[type='submit']:hover {
+    filter: brightness(1.1);
+  }
+}
