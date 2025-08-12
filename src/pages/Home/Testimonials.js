@@ -10,41 +10,37 @@ const customers = [
     fullName: 'Maria Sanchez',
     image: customer1Image,
     rating: [1, 1, 1, 1, 0.5],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    says: `The Greek salad here is absolutely divine! Fresh ingredients and that homemade dressing makes all the difference. My family and I come here every week for their Mediterranean specials.`,
   },
   {
     fullName: 'Antony Clifton',
     image: customer2Image,
     rating: [1, 1, 1, 1, 1],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    says: `Best Italian restaurant in the area! The bruschetta is perfectly toasted and the pasta dishes are cooked to perfection. The chefs really know their craft. Highly recommend!`,
   },
   {
     fullName: 'Tamika Jackson',
     image: customer3Image,
     rating: [1, 1, 1, 1, 0.5],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    says: `I love the cozy atmosphere and friendly staff. Their lemon dessert is to die for - not too sweet, just perfect! Great place for date night or family celebrations.`,
   },
   {
     fullName: 'Brandon Ming',
     image: customer4Image,
     rating: [1, 1, 1, 1],
-    says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    says: `Amazing food and excellent service! The portions are generous and everything tastes homemade. Their weekly specials are always creative and delicious.`,
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="testimonials">
-      <div className="container grid">
+    <section className='testimonials'>
+      <div className='container grid'>
         <h2>What people say about us!</h2>
-        {customers.map((customer, index) => 
+        {customers.map((customer, index) => (
           <TestimonialCard key={index} customer={customer} />
-        )}
-     </div>
+        ))}
+      </div>
     </section>
   );
 };

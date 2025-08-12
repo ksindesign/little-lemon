@@ -12,11 +12,16 @@ p {
   }
 }
 
+input {
+  width: 100%;
+}
+
 button[type='submit'] {
   display: inline-block;
   padding-block: 0.5rem;
   background-color: var(--primary-color-two);
   outline: none;
+  border-radius: 4px;
 }
 
 button[type='submit']:focus {

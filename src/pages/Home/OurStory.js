@@ -4,29 +4,30 @@ import './OurStory.css';
 
 const OurStory = () => {
   return (
-    <section className="container grid our-story">
-      <div className="our-story-description">
+    <section className='container grid our-story'>
+      <div className='our-story-description'>
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-          culpa qui officia deserunt mollit anim id est laborum. Sed ut 
-          perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
-          inventore veritatis et quasi architecto beatae vitae dicta sunt 
-          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
-          odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-          voluptatem sequi nesciunt.
+          Little Lemon began as a dream in the heart of two passionate chefs,
+          Mario and Adrian, who shared a vision of bringing authentic
+          Mediterranean flavors to Chicago. What started as a small family
+          kitchen in 2012 has grown into one of the city's most beloved dining
+          destinations. Our story is one of tradition meeting innovation, where
+          time-honored recipes passed down through generations are reimagined
+          with fresh, locally-sourced ingredients. Every dish tells a story of
+          the Mediterranean coast, from the sun-kissed olive groves of Greece to
+          the aromatic herb gardens of Italy. We believe that great food has the
+          power to bring people together, create lasting memories, and transport
+          you to distant shores with every bite. That's why we pour our hearts
+          into every meal, ensuring that every guest experiences not just
+          exceptional cuisine, but the warmth and hospitality that makes dining
+          at Little Lemon feel like coming home.
         </p>
       </div>
-      <div className="our-story-chefs">
-        <img src={chefsMarioAndAdrianAImage} alt="Chefs Mario and Adrian" />
-        <img src={chefsMarioAndAdrianBImage} alt="Chefs Mario and Adrian" />
+      <div className='our-story-chefs'>
+        <img src={chefsMarioAndAdrianAImage} alt='Chefs Mario and Adrian' />
+        <img src={chefsMarioAndAdrianBImage} alt='Chefs Mario and Adrian' />
       </div>
     </section>
   );
